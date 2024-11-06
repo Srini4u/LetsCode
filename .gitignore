@@ -3,6 +3,7 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/uiDesigner.xml
+*.class
 LetsCode/
 LetsCode2.iml
 out/production/LetsCode2/org/array/BestTimeToBuyStock.class
