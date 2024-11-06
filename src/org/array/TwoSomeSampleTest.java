@@ -10,7 +10,7 @@ public class TwoSomeSampleTest {
     public void validateTwoSum(){
         int[] inputArray = {1,3,7,4};
         int target = 10;
-        int[] resultArray = TwoSum.findIndicesTwoSum(inputArray, target);
+        int[] resultArray = TwoSumII.findIndicesTwoSum(inputArray, target);
 
         //validate positive scenario
         assertNotNull(resultArray);
@@ -22,7 +22,7 @@ public class TwoSomeSampleTest {
     public void validateTwoSumNoResult(){
         int[] inputArray = {1, 3, 4, 9};
         int target = 8;
-        int[] resultArray = TwoSum.findIndicesTwoSum(inputArray, target);
+        int[] resultArray = TwoSumII.findIndicesTwoSum(inputArray, target);
 
         //since no result expect a not null array with no data
         assertNotNull(resultArray);
@@ -33,7 +33,7 @@ public class TwoSomeSampleTest {
     public void validateTwoSomeWithNegativeValues(){
         int[] inputArray = {-3, 1, 2, 12};
         int target = 9;
-        int[] resultArray = TwoSum.findIndicesTwoSum(inputArray, target);
+        int[] resultArray = TwoSumII.findIndicesTwoSum(inputArray, target);
 
         assertNotNull(resultArray);
         assertEquals(0, resultArray[0]);
@@ -46,7 +46,7 @@ public class TwoSomeSampleTest {
         int[] nums = {1, 2, 3, 6};
         int target = 6;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Expecting no result since we can't use the same element twice (3 + 3 is not allowed with a single 3)
         assertNotNull(result);
@@ -59,7 +59,7 @@ public class TwoSomeSampleTest {
         int[] nums = {6};
         int target = 6;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Since only one element is present, there can be no valid pair
         assertNotNull(result);

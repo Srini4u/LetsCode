@@ -11,7 +11,7 @@ public class TwoSumTest {
         int[] nums = {1, 3, 5, 7, 9};
         int target = 12;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Check that the result contains the correct indices (1 and 4 in this case)
         assertNotNull(result);
@@ -26,7 +26,7 @@ public class TwoSumTest {
         int[] nums = {1, 2, 3, 4};
         int target = 10;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Since no solution exists, we expect an empty array
         assertNotNull(result);
@@ -39,7 +39,7 @@ public class TwoSumTest {
         int[] nums = {-3, 2, 4, 8};
         int target = 5;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Check that the correct indices are returned
         assertNotNull(result);
@@ -54,7 +54,7 @@ public class TwoSumTest {
         int[] nums = {1, 3, 3, 4};
         int target = 6;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Expecting no result since we can't use the same element twice (3 + 3 is invalid)
         assertNotNull(result);
@@ -67,7 +67,7 @@ public class TwoSumTest {
         int[] nums = {5};
         int target = 5;
 
-        int[] result = TwoSum.findIndicesTwoSum(nums, target);
+        int[] result = TwoSumII.findIndicesTwoSum(nums, target);
 
         // Since only one element is present, there can be no valid pair
         assertNotNull(result);

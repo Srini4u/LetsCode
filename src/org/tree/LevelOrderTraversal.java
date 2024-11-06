@@ -3,7 +3,6 @@ package org.tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.stream.Collectors;
 
 public class LevelOrderTraversal {
@@ -27,11 +26,11 @@ public class LevelOrderTraversal {
         root.right.right = new TreeNode(7);
 
         System.out.println("Level-order traversal of the binary tree:");
-        levelOrder(root);
+        levelOrderSimple(root);
 
     }
 
-    public static void levelOrder(TreeNode root){
+    public static void levelOrderSimple(TreeNode root){
         if(root == null){
             return;
         }
