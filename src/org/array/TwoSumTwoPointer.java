@@ -2,7 +2,7 @@ package org.array;
 
 import java.util.Arrays;
 
-public class TwoSumII {
+public class TwoSumTwoPointer {
 
     public static void main(String[] args){
         int[] nums = {9, 3, 4, 2, 7, 12, 15};
